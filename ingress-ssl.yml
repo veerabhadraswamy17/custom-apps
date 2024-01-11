@@ -21,7 +21,7 @@ spec:
     - host: sapp2.chikithsa.com
       http:
         paths:
-          - path: /
+          - path: /app2
             pathType: Prefix
             backend:
               service:
@@ -35,7 +35,7 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: app2-service
+                name: app3-service
                 port: 
                   number: 80
     - host: www.chikithsa.com
